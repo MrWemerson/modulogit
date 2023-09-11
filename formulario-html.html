@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Meu primeiro Formulário</title>
+	<link rel="stylesheet" href="estiloce.css">
+</head>
+<body>
+
+	<h1>Formulário de Pesquisa</h1>
+	
+	<form action="cadastro.php" method="GET">
+	
+	<label for="campo_nome">Nome</label>
+	<input type="text" id="campo_nome" placeholder="Digite seu nome aqui" /><br/><br/>
+	
+	<label for="campo_email">E-mail</label>
+	<input type="email" id="campo_email" placeholder="Digite seu email aqui" />	<br/>	
+	
+		<!-- Quando você da múltiplas escolhas em um item que vc pode abrir. -->
+	<h3>Estado Civil </h3>
+	<select name="situacao">
+		<option selected disabled value="">Selecione seu estado civil</option>
+		<option value="solteiro">Solteiro(a)</option>
+		<option value="casado">Casado(a)</option>
+		<option value="separado">Separado(a)</option>
+		<option value="divorciado">Divorciado(a)</option>
+		<option value="viuvo">Viúvo(a)</option>
+	</select>
+	<br/>
+		
+	
+	<!-- São aquela bolinhas que você tem que selecionar um item de várias opções. só escolhe uma por vez. -->
+	<h3>Informe sua Turma</h3>	
+	<input type="radio" name="turma" value="opcao1" id="op1" /><!-- value é o que será mandado no formulário -->
+	<label for="op1">201</label><br/>
+	<input type="radio" name="turma" value="opcao2" id="op2" />
+	<label for="op2">202</label><br/>
+	<input type="radio" name="turma" value="opcao3" id="op3" />
+	<label for="op3">203</label><br/>
+	
+	
+
+	
+	<!-- Quando queremos da mais de uma opção. Utilize checkbox. Faz um quadradinho para ticar. Não teremos o mesmo name para todas caixinhas. Checklist. -->
+	<h3>Como você ficou sabendo que sua escola<br/> oferta o curso de Desenvolvimento de Sistemas ?</h3>
+	
+	<input id="item1" type="checkbox" name="item1" value="TV">
+	<label for="item1"> TV </label>
+	<br/>
+	<input id="item2" type="checkbox" name="item2" value="radio">
+	<label for="item2"> Rádio </label>
+	<br/>
+	<input id="item3" type="checkbox" name="item3" value="internet">
+	<label for="item3"> Internet </label>
+	<br/>
+	<input id="item3" type="checkbox" name="item3" value="pais">
+	<label for="item3"> Pais </label>
+	<br/>
+	<input id="item3" type="checkbox" name="item3" value="outros">
+	<label for="item3"> Outros </label>
+	<br/>
+	
+	<h3>Escreva aqui sugestões, elogios e reclamações</h3>
+	<textarea placeholder="Digite aqui sua mensagem" rows="15" cols="65"></textarea>
+	<br/><br/>
+	
+	
+	<input type="submit" value="Enviar" />
+	<input type="reset" value="Limpar" />
+	
+	
+	</form>	
+	
+</body>
+</html>
